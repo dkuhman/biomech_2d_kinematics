@@ -9,3 +9,6 @@ This script finds the minimum horizontal velocity needed for a projectile to tra
 
 # kinematics_projectile_motion_3
 This script finds the air time, horizontal distance covered, and peak vertical position (height) of a projectile launched with a given 2D resultant velocity and launch angle. The projectile launches and lands at the same altitude. Air resistance and assistance are considered negligible in this code. Launch angle (launch_angle) can be changed at line 8 and resultant velocity (velocity_r) can be changed at line 15.
+
+# kinematics_projectile_motion_4
+This script finds the optimal launch angle for a projectile launched with a given 2D resultant velocity. The projectile launches and lands at the same altitude. Air resistance and assistance are considered negligible in this code. Resultant velocity (velocity_r) can be changed at line 18. HINT: Optimal angle should always be 45-degrees!
