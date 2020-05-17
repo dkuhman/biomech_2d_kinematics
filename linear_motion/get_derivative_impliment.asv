@@ -1,0 +1,17 @@
+%Created by: Daniel Kuhman
+%Github: https://github.com/dkuhman
+%Last updated: 2020-05-17
+
+%Clear workspace
+clear all
+clc
+
+data = sin(x^2);
+
+
+
+%Get velocity (1st derivative of position)
+
+%Get acceleration (2nd derivative of position)
+
+
