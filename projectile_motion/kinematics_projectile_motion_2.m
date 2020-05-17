@@ -1,5 +1,12 @@
-clear all; clc
-%%
+%2D KINEMATICS p.2
+%Created by: Daniel Kuhman
+%Github: https://github.com/dkuhman
+%Last updated: 2020-05-17
+
+%Clear workspace
+clear all
+clc
+
 %Find minimum horizontal velocity needed to clear specified horizontal 
 %distance for a projectile fired at a given height with no launch angle. 
 
@@ -48,3 +55,9 @@ end
 
 disp(['Minimum velocity needed to clear is: ' num2str(all_velocities(end))])
 
+
+%Plot distance cleared aainst horizontal velocity
+figure
+plot(all_velocities, clearance(1:end-1), 'bo', 'MarkerSize', 2)
+xlabel('Horizontal Velocity')
+ylabel('Distance Cleared')

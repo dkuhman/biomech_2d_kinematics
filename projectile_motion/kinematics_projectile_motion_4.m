@@ -1,6 +1,12 @@
-clear all; clc
-%2D KINEMATICS
-%%
+%2D KINEMATICS p.1
+%Created by: Daniel Kuhman
+%Github: https://github.com/dkuhman
+%Last updated: 2020-05-17
+
+%Clear workspace
+clear all
+clc
+
 %Optimize launch angle for a given velocity - This should always be
 %45-degrees.
 
@@ -56,3 +62,9 @@ max_distance = max(distance_cleared(:,2));
 best_angle = distance_cleared(distance_cleared(:,2)==max_distance, 1);
 
 disp(['Max distance cleared: ' num2str(max_distance) ' at angle: ' num2str(best_angle)])
+
+figure
+plot(distance_cleared(:, 1), distance_cleared(:, 2), 'bo', 'MarkerSize', 3)
+xlabel('Launch Angle (deg)')
+ylabel('Distance Cleared')
+ylim([0 max(distance_cleared(:,2))+1])

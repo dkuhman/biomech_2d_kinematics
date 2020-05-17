@@ -1,6 +1,12 @@
-clear all; clc
-%2D KINEMATICS
-%%
+%2D KINEMATICS p.3
+%Created by: Daniel Kuhman
+%Github: https://github.com/dkuhman
+%Last updated: 2020-05-17
+
+%Clear workspace
+clear all
+clc
+
 %Find horizontal displacement of a projectile when the object is launched 
 %at an angle with a given resultant velocity. The object is launched and
 %lands at the same vertical position (no change in altitude). 
@@ -51,3 +57,8 @@ end
 disp(['Time: ' num2str(time(end))]) %Displays time projectile was in the air
 disp(['Distance cleared: ' num2str(position_x(end))]) %Displays horizontal distance covered
 disp(['Peak Height: ' num2str(max(position_y))]) %Displays projectile's peak height
+
+figure
+plot(position_x, position_y, 'LineWidth', 2)
+xlabel('Horizontal Position')
+ylabel('Vertical Position')

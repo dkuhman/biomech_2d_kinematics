@@ -1,6 +1,12 @@
-clear all; clc
-%2D KINEMATICS
-%%
+%2D KINEMATICS p.1
+%Created by: Daniel Kuhman
+%Github: https://github.com/dkuhman
+%Last updated: 2020-05-17
+
+%Clear workspace
+clear all
+clc
+
 %Calculate horizontal distance for a given velocity and height. Assume that
 %air resistance/assistance is negligible. Launch angle is 0-degrees
 
@@ -40,3 +46,11 @@ end
 
 horizontal_distance = position_x(end); %Get final horizontal position
 disp(['Final horizontal displacement: ' num2str(horizontal_distance)])
+
+%Plot displacement
+figure
+plot(position_x, position_y, 'LineWidth', 2)
+xlabel('Horizontal Position')
+ylabel('Vertical Position')
+xlim([0 position_x(end)+1])
+ylim([0 position_y(1)+5])
