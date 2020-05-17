@@ -6,7 +6,9 @@ This repository houses MATLAB scripts related to solving 2D kinematic problems (
 ## Linear Motion
 `get_derivative.m`: This function finds the derivative of a signal.
 
-`get_derivative_impliment.m`: This script provides an example case of finding a signal's derivative. Specifically, the script finds the first (velocity) and second (acceleration) derivative of the position of a motion capture marker. 
+`get_derivative_impliment.m`: This script provides an example case of finding a signal's derivative. Specifically, the script finds and plots the first (velocity) and second (acceleration) derivative of the vertical position of the body's center of mass captured during treadmill walking. 
+
+<img src='media/linear_motion_pva.jpg' width=70%>
 
 ---
 
